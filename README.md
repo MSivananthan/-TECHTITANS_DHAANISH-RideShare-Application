@@ -114,7 +114,7 @@ Administrators oversee the entire system, ensuring smooth operation:
 4. **Generate Reports**: Detailed reports are generated to track usage, cost savings, and environmental impact.
 5. **Resolve Issues**: The administrator addresses any disputes or technical issues that arise.
 
-<img src="13.png">
+<img src="16.png">
 
 ## AI Algorithms
 
@@ -131,13 +131,13 @@ Designed to minimize travel time and distance, this algorithm:
 - **Optimizes Multi-Stop Routes**: Adjusts routes to efficiently accommodate multiple riders.
 - **Reduces Travel Time**: Ensures the most efficient route is selected, reducing delays.
 
-<img src="14.png"><img src="15.png">
+
 
 ### Payment Calculation Algorithm
 The app automatically calculates and splits the fare among riders:
 - **Distance-Based Calculation**: Each rider pays proportionally based on the distance traveled.
 
-<img src="16.png">
+<img src="14.png"><img src="15.png"><img src="16.png">
 
 ### Notification Algorithm
 This algorithm handles all ride-related notifications, ensuring users are always informed:
@@ -145,7 +145,7 @@ This algorithm handles all ride-related notifications, ensuring users are always
 - **Payment Alerts**: Sends alerts for fare calculation, payment confirmation, and receipts.
 - **Reminders**: Provides reminders for upcoming rides and alerts for cancellations.
 
-<img src="17.png">
+<img src="17.png"><img src="18.png">
 
 ### Feedback Analysis Algorithm
 User feedback is crucial for continuous improvement. This algorithm:
@@ -153,7 +153,7 @@ User feedback is crucial for continuous improvement. This algorithm:
 - **Identifies Trends**: Spots recurring issues or praise points to guide app enhancements.
 - **Improves User Experience**: Uses insights from feedback to refine features and algorithms.
 
-<img src="18.png">
+<img src="13.png">
 
 ## Future Enhancements
 
