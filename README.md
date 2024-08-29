@@ -1,10 +1,10 @@
-I'll delve deeper into specific areas, such as technical implementation, user onboarding, and detailed feature descriptions.
+I'll delovep deeper into specific areas, such as technical implementation, user onboarding, and detailed feature descriptions.
 
 ---
 
 # RideShare Application
 
-<img src="1.png" align="center">
+
 
 ## Overview
 The **RideShare Application** is an AI-powered platform tailored for Hexaware employees, designed to optimize commuting through carpooling. The application connects employees with similar routes and schedules, aiming to reduce travel costs, build a sense of community, and promote sustainability within Hexaware.
@@ -14,6 +14,8 @@ The **RideShare Application** is an AI-powered platform tailored for Hexaware em
 - **Community Building**: Enhance workplace relationships by facilitating shared commutes.
 - **Sustainability**: Contribute to reduced carbon emissions and traffic congestion, aligning with Hexaware’s environmental goals.
 - **Safety & Convenience**: Provide a secure, user-friendly platform with features like real-time tracking and AI-based ride matching.
+
+<img src="1.png" align="center">
 
 ## Scope
 The application serves Hexaware employees across all locations, supporting both intra-city and inter-city carpooling. It seamlessly integrates with Hexaware’s IT systems, ensuring easy onboarding and user management.
@@ -25,7 +27,7 @@ The application serves Hexaware employees across all locations, supporting both 
 ### User Authentication
 Employees log in using their corporate credentials, ensuring that only verified Hexaware employees can access the platform. This security measure maintains the integrity of the ride-sharing ecosystem.
 
-<img src="1.png" align="center"><img src="3.png" ><img src="2.png">
+<img src="3.png" ><img src="2.png">
 
 ### AI-Powered Ride Matching
 The application leverages AI algorithms to match riders and drivers based on multiple factors:
