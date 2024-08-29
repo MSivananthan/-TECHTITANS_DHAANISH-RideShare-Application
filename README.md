@@ -25,7 +25,7 @@ The application serves Hexaware employees across all locations, supporting both 
 ### User Authentication
 Employees log in using their corporate credentials, ensuring that only verified Hexaware employees can access the platform. This security measure maintains the integrity of the ride-sharing ecosystem.
 
-<img src="3.png" ><img src="2.png">
+<img src="1.png" align="center"><img src="3.png" ><img src="2.png">
 
 ### AI-Powered Ride Matching
 The application leverages AI algorithms to match riders and drivers based on multiple factors:
