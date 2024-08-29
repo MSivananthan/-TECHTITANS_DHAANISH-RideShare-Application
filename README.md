@@ -4,7 +4,7 @@ I'll delve deeper into specific areas, such as technical implementation, user on
 
 # RideShare Application
 
-<img src="1.png">
+<img src="1.png" align="center">
 
 ## Overview
 The **RideShare Application** is an AI-powered platform tailored for Hexaware employees, designed to optimize commuting through carpooling. The application connects employees with similar routes and schedules, aiming to reduce travel costs, build a sense of community, and promote sustainability within Hexaware.
