@@ -47,14 +47,14 @@ Payments are managed within the app, with features like:
 - **Automated Fare Calculation**: The fare is calculated based on distance and split among participants.
 - **Secure Payment Processing**: Transactions are conducted securely within the app, eliminating the need for cash exchanges.
 
-<img src="6.png">
+
 
 ### Real-Time Tracking
 Safety and convenience are enhanced through real-time tracking:
 - **Live Ride Monitoring**: Riders and drivers can track the ride in progress, ensuring timely updates and peace of mind.
 - **Arrival Alerts**: Notifications are sent when the driver is en route or has arrived at the pick-up location.
 
-<img src="7.png">
+<img src="6.png"><img src="7.png">
 
 ## User Roles
 
@@ -74,7 +74,7 @@ Drivers are Hexaware employees offering rides. Their responsibilities include:
 - **Commuting**: Providing a safe and comfortable ride for the participants.
 - **Receiving Payments**: Automatically receiving payments after the ride, facilitated by the app.
 
-<img src="9.png">
+<img src="9.png"><img src="10.png">
 
 ### Administrators
 Administrators oversee the entire system, ensuring smooth operation:
@@ -83,7 +83,7 @@ Administrators oversee the entire system, ensuring smooth operation:
 - **Reporting**: Generating reports for management to review the application’s performance.
 - **Issue Resolution**: Addressing any disputes or issues that arise.
 
-<img src="10.png">
+
 
 ## Process Flow
 
@@ -124,14 +124,14 @@ This algorithm intelligently pairs riders and drivers by analyzing:
 - **Time Preferences**: Matching users with similar schedules for seamless coordination.
 - **Historical Data**: Learning from past ride data to improve matching accuracy over time.
 
-<img src="14.png">
+
 
 ### Route Optimization Algorithm
 Designed to minimize travel time and distance, this algorithm:
 - **Optimizes Multi-Stop Routes**: Adjusts routes to efficiently accommodate multiple riders.
 - **Reduces Travel Time**: Ensures the most efficient route is selected, reducing delays.
 
-<img src="15.png">
+<img src="14.png"><img src="15.png">
 
 ### Payment Calculation Algorithm
 The app automatically calculates and splits the fare among riders:
