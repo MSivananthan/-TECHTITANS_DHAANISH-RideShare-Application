@@ -36,7 +36,6 @@ The application serves Hexaware employees across all locations, supporting both 
 ## Key Features
 
 
-
 ### User Authentication
 Employees log in using their corporate credentials, ensuring that only verified Hexaware employees can access the platform. This security measure maintains the integrity of the ride-sharing ecosystem.
 
