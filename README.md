@@ -22,7 +22,7 @@ The RideShare application is an AI-powered platform developed to enhance commuti
 
 ## Tech Stack
 - **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Firebase (Authentication, Database, Hosting)
+- **Backend**: Google Map API (Navigation), Firebase (Authentication, Database, Hosting)
 
 ## AI-Powered Algorithms
 - **Ride Matching Algorithm**: Matches riders and drivers by comparing routes and schedules.
