@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Easy</title>
+    
+</head>
+<body>
+    <div class="container8">
+        <header>
+            <h2 class="h11">My Wallet</h2>
+        </header>
+        
+        <div class="option" onclick="redirectToPage('payment1.html')">
+            <span class="icon">✔️</span>
+            <div>
+                <p class="option-title">Payment Methods</p>
+                <p class="option-subtitle">Select your payment type.</p>
+            </div>
+        </div>
+
+        <div class="option" onclick="redirectToPage('coupons.html')">
+            <span class="icon">🏷️</span>
+            <div>
+                <p class="option-title">Refer Friend</p>
+                <p class="option-subtitle">Invite friends and earn ₹RIDE.</p>
+            </div>
+        </div>
+
+        <div class="option" onclick="redirectToPage('confirmation.html')">
+            <span class="icon">💸</span>
+            <div>
+                <p class="option-title">Pay on Cash</p>
+                <p class="option-subtitle">Pay your fare in cash.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function redirectToPage(page) {
+            window.location.href = page; // Redirect to the specified page
+        }
+    </script>
+    <script src="script.js"></script>
+    <style>
+        .h11 {
+            text-align: center;
+        }
+    body{
+        background-color: black;
+    }
+        .container8 {
+    width: 90%;
+    max-width: 400px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 40%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.wallet-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.wallet-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    background-color: #ff007a;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.balance {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.amount {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: #444;
+}
+
+.icon {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.option-title {
+    font-size: 18px;
+    color: #fff;
+}
+
+.option-subtitle {
+    font-size: 14px;
+    color: #888;
+}
+    </style>
+    <script>
+                function redirectToPage(page) {
+            window.location.href = page; // Redirect to the specified page
+        }
+
+    </script>
+</body>
+</html>

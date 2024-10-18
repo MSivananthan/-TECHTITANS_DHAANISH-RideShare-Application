@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ride Easy</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #111; /* Dark background */
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      text-align: center;
+      color: white;
+    }
+    
+    .icon {
+      background-color: #FBEFEF;
+      border-radius: 50%;
+      display: inline-block;
+      padding: 20px;
+    }
+    
+    .icon::before {
+      content: '\2713'; /* Checkmark symbol */
+      color: #E91E63;
+      font-size: 48px;
+    }
+    
+    .message {
+      margin-top: 20px;
+      font-size: 24px;
+    }
+    
+    .sub-message {
+      font-size: 16px;
+      margin-top: 10px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    
+    .confirm-button {
+      margin-top: 40px;
+      padding: 15px 40px;
+      background-color: #E91E63;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    
+    .confirm-button:hover {
+      background-color: #D81B60;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon"></div>
+    <div class="message">Thank you</div>
+    <div class="sub-message">Successfully Registered</div>
+    
+    
+
+    <button class="ride-now" id="next-now-btn" style="background-color:#ff007a;padding: 10px;margin-top: 10px;border-radius: 10px;color: white;">NEXT</button>
+
+  </div>
+  <script>
+          document.getElementById('next-now-btn').addEventListener('click', function() {
+        window.location.href = 'riderdetail.html'; // Redirect to ride-now.html page
+      });
+
+  </script>
+</body>
+</html>

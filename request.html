@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Easy</title>
+    <link rel="stylesheet" href="styles1.css">
+    
+</head>
+<body>
+    <div id="ride1" class="container">
+            <div class="logo">
+                <span class="ride"><span class="r">R</span>ide</span><span class="easy"><span class="e">E</span>asy</span>
+            </div>
+    
+        
+         <!-- Add an input field for destination -->
+<div class="location-fields">
+    <label for="current-location">PickUp Location:</label>
+    <input type="text" id="current-location" placeholder="Enter current location"><br>
+    
+    <label for="destination">Drop Off Location:</label>
+    <input type="text" id="destination" placeholder="Enter Destination">
+    <!-- Add a new input field for destination -->
+    
+        <div class="datetime-fields">
+            <label for="ride-date">Date:</label>
+            <input type="date" id="ride-date">
+            <label for="ride-time">Time:</label>
+            <input type="time" id="ride-time">
+        </div>
+
+        <button id="check-availability" class="check-btn">Search Ride</button>
+    </div>
+</div>
+<script>
+    const checkAvailabilityButton = document.getElementById('check-availability');
+
+checkAvailabilityButton.addEventListener('click', () => {
+  // Redirect to a new page (e.g., availability.html)
+  window.location.href = 'seat.html';
+});
+</script>
+</body>
+</html>

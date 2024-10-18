@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Easy</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Rider Details</h1>
+        <h2 id="rider-name">Name:</h2>
+        <p><span class="label">Pick Up:</span> <span id="pickup-point"></span></p>
+        <p><span class="label">Drop Off:</span> <span id="drop-off-point"></span></p>
+        <p><span class="label">Date:</span> <span id="date"></span></p>
+        <p><span class="label">Time:</span> <span id="time"></span></p>
+        <div class="button-container">
+            <button id="accept-btn">Accept Ride</button>
+            <button id="reject-btn">Reject Ride</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: black;
+    border: 1px solid #ddd;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ff007a;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #ff69b4;
+}
+    </style>
+    <script>
+      // Define a list of names
+const names = [
+    "John Doe",
+    "Jane Smith",
+    "Bob Johnson",
+    "Alice Brown",
+    "Mike Davis",
+    "Emily Taylor",
+    "Sarah Lee",
+    "Kevin White",
+    "Lisa Hall",
+    "Tom Harris"
+];
+
+// Define a list of pickup points
+const pickupPoints = [
+    "chennai",
+    "Anna Nagar",
+    "PQR-9012",
+    "MNO-3456",
+    "STU-7890",
+    "VWX-4567",
+    "YZA-2345",
+    "BCD-6789",
+    "EFG-0123",
+    "HIJ-5678"
+];
+
+// Define a list of drop off points
+const dropOffPoints = [
+    "DEF-4567",
+    "GHI-8901",
+    "JKL-2345",
+    "MNO-5678",
+    "PQR-9012",
+    "STU-3456",
+    "VWX-6789",
+    "XYZ-0123",
+    "ABC-4567",
+    "EFG-8901"
+];
+
+// Function to generate random name, pickup point, drop off point, date, time
+function generateDetails() {
+    const name = names[Math.floor(Math.random() * names.length)];
+    const pickupPoint = pickupPoints[Math.floor(Math.random() * pickupPoints.length)];
+    const dropOffPoint = dropOffPoints[Math.floor(Math.random() * dropOffPoints.length)];
+    const date = new Date().toLocaleDateString();
+    const time = new Date().toLocaleTimeString();
+
+    document.getElementById("rider-name").textContent = `Name: ${name}`;
+    document.getElementById("pickup-point").textContent = pickupPoint;
+    document.getElementById("drop-off-point").textContent = dropOffPoint;
+    document.getElementById("date").textContent = date;
+    document.getElementById("time").textContent = time;
+}
+
+generateDetails();
+
+// Add event listeners to the Accept and Reject buttons
+document.getElementById("accept-btn").addEventListener("click", () => {
+    console.log("Accept Ride button clicked");
+    window.location.href = "payment2.html"; // redirect to accepted.html page
+});
+
+document.getElementById("reject-btn").addEventListener("click", () => {
+    console.log("Reject Ride button clicked");
+    window.location.href = "driver1.html"; // redirect to rejected.html page
+});
+
+    </script>
+</body>
+</html>

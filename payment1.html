@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Easy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container9 {
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .payment-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .payment-header img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .payment-header h1 {
+            font-size: 24px;
+        }
+
+        .payment-amount {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 36px;
+        }
+
+        .card-methods {
+            background-color: #1c1c1c;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .method {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+
+        .add-new-method {
+            background-color:#ff007a;
+            ;
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .add-new-method:hover {
+            background-color: white;
+            color: black;
+        }
+
+        input {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 80%;
+            border-radius: 5px;
+        }
+
+        input::placeholder {
+            color: #888;
+        }
+
+        .redirect-notice {
+            display: none;
+            color: #32cd32;
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Payment Method</title>
+      <style>
+        /* styles here */
+      </style>
+    </head>
+    <body>
+      <div class="container9">
+        <div class="payment-header">
+          <h1>Payment Method</h1>
+          <div>
+            <img src="https://img.icons8.com/ios-glyphs/50/ffffff/money.png" alt="Cash Icon">
+          </div>
+        </div>
+        <div class="payment-amount">
+          ₹<span id="cash-amount"></span>
+        </div>
+    
+        <div class="card-methods">
+          <h2>CREDIT CARD</h2>
+          <div class="method">
+            <span>Enter number</span>
+            <input type="text" id="card1" placeholder="Enter Number" maxlength="3">
+          </div>
+          
+          <div class="method">
+            <span>Enter cvvNum</span>
+            <input type="text" id="card2" placeholder="Enter CVV" maxlength="3">
+          </div>
+        </div>
+    
+        <button class="add-new-method" id="add-new-method-btn" onclick="addNewMethod()">Confirm Booking</button>
+    
+        <script>
+          function generateRandomCash() {
+            const cashAmount = Math.floor(Math.random() * 500) + 100; // Random amount between 100 and 500
+            document.getElementById('cash-amount').innerText = cashAmount;
+          }
+    
+          document.getElementById('add-new-method-btn').addEventListener('click', function () {
+            if (document.getElementById('card1').value.length === 3 && document.getElementById('card2').value.length === 3) {
+              const cashAmount = generateRandomCash();
+              localStorage.setItem('cashAmount', cashAmount); // Store the cash amount in local storage
+              window.location.href = "confirmation.html"; // Redirect to Booking Confirmation page
+            } else {
+              alert("Please enter valid card number and CVV.");
+            }
+          });
+    
+          generateRandomCash(); // Initialize the random cash amount
+        </script>
+      </div>
+    </body>
+    </html>
+    

@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #e84c65;
+}
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Styling individual parts of the logo */
+
+.r{
+    color: #ff007a;
+}
+.e{
+    color:  #ff007a;
+}
+
+
+.location-fields {
+    margin: 20px 0;
+}
+
+.location-fields label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.location-fields input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    width: 300px; 
+    display: block;
+    margin: 0 auto; 
+}
+
+.datetime-fields {
+    margin: 20px 0;
+}
+
+.datetime-fields label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.datetime-fields input[type="date"], .datetime-fields input[type="time"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    width: 300px; 
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    background-color: #888;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button#check-availability {
+    background-color: #ff007a;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+/* Add this to your CSS file */
+
+/* Existing styles remain the same */
+
+/* Add media queries for mobile view */
+@media only screen and (max-width: 768px) {
+    /* Adjust the container margin and padding */
+    .container {
+      margin-top: 50px;
+      padding: 20px;
+    }
+  
+    /* Make the logo smaller */
+    .logo {
+      font-size: 2rem;
+    }
+  
+    /* Make the input fields and labels full-width */
+    .location-fields input[type="text"], .datetime-fields input[type="date"], .datetime-fields input[type="time"] {
+      width: 100%;
+    }
+  
+    /* Adjust the button styles */
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  
+    button#check-availability {
+      margin-top: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* Make the input fields and labels even smaller */
+    .location-fields input[type="text"], .datetime-fields input[type="date"], .datetime-fields input[type="time"] {
+      font-size: 14px;
+    }
+  
+    /* Adjust the button styles */
+    button {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  }

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Easy</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Driver Detail</h2>
+        <div class="driver-info">
+            <p>Driver Name: <span id="driver-name"></span></p>
+            <p>Contact Number: <span id="contact-number"></span></p>
+            <p>Rating: <span id="rating"></span>/5</p>
+        </div>
+        <div class="ride-info">
+            <p>Pickup Location: <span id="pickup-location"></span></p>
+            <p>Date and Time: <span id="date-time"></span></p>
+            <p>Amount: <span id="amount"></span></p>
+        </div>
+        <div class="buttons">
+            <button id="book-later">Book Later</button>
+            <button id="book-now">Book Now</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: black;
+    
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.driver-info, .ride-info {
+    margin-bottom: 20px;
+}
+
+.driver-info p, .ride-info p {
+    margin-bottom: 10px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff007a;
+
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+#book-later {
+    background-color: #ccc;
+    color: #333;
+}
+
+#book-later:hover {
+    background-color: #aaa;
+}
+    </style>
+    <script>
+        // Function to generate random data
+function generateRandomData() {
+    const driverNames = ["John Doe", "Jane Smith", "Bob Johnson", "Alice Brown", "Mike Davis"];
+    const contactNumbers = ["123-456-7890", "987-654-3210", "555-123-4567", "111-222-3333", "444-555-6666"];
+    const ratings = [4, 4.5, 5, 3.5, 4.2];
+    const pickupLocations = ["Tambaram", "Anna Nagar", "Villivakkam", "Ayanavram", "Seattle"];
+    const amounts = [100, 150, 200, 120, 180];
+
+    const driverName = driverNames[Math.floor(Math.random() * driverNames.length)];
+    const contactNumber = contactNumbers[Math.floor(Math.random() * contactNumbers.length)];
+    const rating = ratings[Math.floor(Math.random() * ratings.length)];
+    const pickupLocation = pickupLocations[Math.floor(Math.random() * pickupLocations.length)];
+    const amount = amounts[Math.floor(Math.random() * amounts.length)];
+    const dateTime = new Date().toLocaleString();
+
+    document.getElementById("driver-name").textContent = driverName;
+    document.getElementById("contact-number").textContent = contactNumber;
+    document.getElementById("rating").textContent = rating;
+    document.getElementById("pickup-location").textContent = pickupLocation;
+    document.getElementById("date-time").textContent = dateTime;
+    document.getElementById("amount").textContent = `$${amount.toFixed(2)}`;
+}
+
+// Generate random data on page load
+generateRandomData();
+
+document.getElementById("book-later").addEventListener("click", function() {
+    console.log("Book Later button clicked");
+    window.location.href = "request.html"; // Redirect to book-later.html
+});
+
+document.getElementById("book-now").addEventListener("click", function() {
+    console.log("Book Now button clicked");
+    window.location.href = "payment.html"; // Redirect to book-now.html
+});
+
+// Add event listeners to buttons
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ride Easy</title>
+</head>
+<body>
+    <div class="container12">
+        <h1>Feedback</h1>
+        <form id="feedback-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating:</label>
+                <select id="rating" required>
+                    <option value="">Select a rating</option>
+                    <option value="1">1 - Poor</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="3">3 - Good</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comments">Comments:</label>
+                <textarea id="comments" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit Feedback</button>
+        </form>
+        <div id="response" class="response"></div>
+    </div>
+    <style>
+        .container12 {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: black;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            background-color: #ff007a;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .response {
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+    <script>
+        document.getElementById('feedback-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Collect feedback data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const rating = document.getElementById('rating').value;
+            const comments = document.getElementById('comments').value;
+
+            // Display response message
+            const responseDiv = document.getElementById('response');
+            if (rating) {
+                responseDiv.textContent = `Thank you for your feedback, ${name}! Your rating: ${rating} and comments: "${comments}" have been received.`;
+            } else {
+                responseDiv.textContent = `Thank you for your feedback, ${name}! Your comments: "${comments}" have been received, but no rating was selected.`;
+            }
+
+            // Optionally clear the form
+            document.getElementById('feedback-form').reset();
+        });
+    </script>
+</body>
+</html>

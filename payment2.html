@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Easy</title>
+    
+</head>
+<body>
+    <h1>Payment summary</h1>
+    <div class="container">
+        <div class="input-section">
+            <label for="distance">Distance Cost:</label>
+            <input type="number" id="distance" value="" readonly>
+            <label for="fuel-cost">Fuel Cost ($):</label>
+            <input type="number" id="fuel-cost" value="0">
+            <label for="maintenance-cost">Maintenance Cost ($):</label>
+            <input type="number" id="maintenance-cost" value="0">
+        </div>
+        <div class="output-section">
+            <h2 style="color: black;">Total Amount:</h2>
+            <p id="total-amount">$0.00</p>
+        </div>
+        <button id="feedback-btn">Provide Feedback</button>
+    </div>
+
+    <script>
+        const distanceInput = document.getElementById("distance");
+        const fuelCostInput = document.getElementById("fuel-cost");
+        const maintenanceCostInput = document.getElementById("maintenance-cost");
+        const totalAmountElement = document.getElementById("total-amount");
+        const feedbackBtn = document.getElementById("feedback-btn");
+
+        // Generate a random distance value between 1 and 100
+        const randomDistance = Math.floor(Math.random() * 100) + 1;
+        distanceInput.value = randomDistance;
+
+        function calculateTotalAmount() {
+            const distance = parseInt(distanceInput.value, 10);
+            const fuelCost = parseInt(fuelCostInput.value, 10);
+            const maintenanceCost = parseInt(maintenanceCostInput.value, 10);
+            const totalAmount = distance + fuelCost + maintenanceCost;
+            totalAmountElement.textContent = `$${totalAmount.toFixed(2)}`;
+        }
+
+        fuelCostInput.addEventListener("input", calculateTotalAmount);
+        maintenanceCostInput.addEventListener("input", calculateTotalAmount);
+
+        calculateTotalAmount(); // initial calculation
+
+        feedbackBtn.addEventListener("click", () => {
+            window.location.href = "feedback.html"; // redirect to feedback.html page
+        });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: black;
+            color: white;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-section {
+            margin-bottom: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .output-section {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border: 1px solid #ddd;
+            width: 95%;
+        }
+
+        #total-amount {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+        }
+
+        #feedback-btn {
+            background-color: #ff007a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #feedback-btn:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</body>
+</html>

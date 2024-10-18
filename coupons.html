@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Easy</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Refer a Friend</h1>
+        <form id="refer-friend-form">
+            <label for="friend-email">Friend's Email:</label>
+            <input type="email" id="friend-email" required>
+            <label for="friend-name">Friend's Name:</label>
+            <input type="text" id="friend-name" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button id="refer-friend-btn">Refer Friend</button>
+        </form>
+        <div class="refer-friend-success" style="display: none;">
+            <h2>Friend Referred Successfully!</h2>
+            <p>Thank you for referring your friend. They will receive an email with a special offer.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <style>
+     body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff007a;
+
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.refer-friend-success {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.refer-friend-success.show {
+    display: block;
+}
+    </style>
+    <script>
+        const referFriendForm = document.getElementById('refer-friend-form');
+const referFriendBtn = document.getElementById('refer-friend-btn');
+const referFriendSuccess = document.querySelector('.refer-friend-success');
+
+referFriendForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const friendEmail = document.getElementById('friend-email').value;
+    const friendName = document.getElementById('friend-name').value;
+    const message = document.getElementById('message').value;
+
+    // Simulate sending an email to the friend
+    console.log(`Sending email to ${friendEmail} with message: ${message}`);
+
+    // Show the success message
+    referFriendSuccess.classList.add('show');
+});
+    </script>
+</body>
+</html>

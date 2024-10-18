@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"poppins",sans-serif;
+    background-color: black;
+    color: white;
+}
+body{
+    background-color:black;
+    color: white;
+    
+}
+.r{
+    color: #ff007a;
+}
+.e{
+    color:  #ff007a;
+}
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    color: white;
+    margin:25px ;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 1rem;
+}
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+.container{
+    background:black;
+    color: white;
+    width:400px;
+    padding:1rem;
+    margin:10px auto;
+    border-radius:10px;
+    box-shadow:0 20px 35px rgba(0,0,1,0.9);
+
+    
+}
+
+.form-title{
+    font-size:1.5rem;
+    font-weight:bold;
+    text-align:center;
+    padding:1.3rem;
+    margin-bottom:0.1rem;
+}
+.input-group {
+    margin-bottom: 1.5rem;
+    background-color: black;
+    font-weight: bold;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    color:white;
+    display: block;
+    margin-bottom: 0.5rem;
+    background-color:black;
+    font-weight: bold;
+
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #1c2622;
+    color: white;
+    outline: none;
+}
+
+input:focus{
+    background-color: transparent;
+    outline:transparent;
+    border-bottom:2px solid hsl(327,90%,28%);
+}
+input::placeholder{
+    color:gray;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    background-color: black;
+}
+
+.options a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+.recover{
+    text-align:right;
+    font-size:1rem;
+    margin-bottom:1rem;
+
+}
+.recover a{
+    text-decoration:none;
+    color:rgb(125,125,235);
+}
+.recover a:hover{
+    color:blue;
+    text-decoration:underline;
+}
+button{
+    font-size:1.1rem;
+    padding:8px 0;
+    border-radius:5px;
+    outline:none;
+    border:none;
+    width:100%;
+    background: #ff007a;
+    color:white;
+    cursor:pointer;
+    transition:0.9s;
+}
+button:hover{
+    background:white;
+    color: #07001f;
+}
+.or{
+    font-size:1.1rem;
+    margin-top:0.5rem;
+    text-align:center;
+}
+.icons{
+    text-align:center;
+}
+.icons i{
+    color:rgb(125,125,235);
+    padding:0.8rem 1.5rem;
+    border-radius:10px;
+    font-size:1.5rem;
+    cursor:pointer;
+    border:2px solid #dfe9f5;
+    margin:0 15px;
+    transition:1s;
+}
+.icons i:hover{
+    background:#07001f;
+    font-size:1.6rem;
+    border:2px solid rgb(125,125,235);
+}
+.links{
+    display:flex;
+    justify-content:space-around;
+    padding:0 4rem;
+    margin-top:0.9rem;
+    font-weight:bold;
+}
+ #signUpButton, #signInButton{
+    color:#3498db;
+    border:none;
+    background-color:transparent;
+    font-size:1rem;
+    font-weight:bold;
+}
+#signUpButton:hover, #signInButton:hover {
+    text-decoration:underline;
+    color:blue;
+} 
+.messageDiv{
+    background-color:hsl(327,90%,28%);
+    color:white;
+    padding:10px 20px;
+    margin:10px;
+    border-radius: 5px;
+    font-size:1rem;
+    opacity:0;
+    animation:fadeOut 7s forwards;
+
+}

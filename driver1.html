@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Easy</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <h2 class="h22">Enter The Required Detail</h2> 
+
+    <div class="login-container1">
+        <form class="login-form" action="confirmation1.html">
+            <div class="input-group">
+                <label for="username">Driver Name</label>
+                <input type="text" id="username" name="username" placeholder="Enter Drivername" required>
+            </div>
+            <div class="input-group">
+                <label for="contact">Contact Number</label>
+                <input type="text" id="contact" name="contact" placeholder="Enter Contact" required>
+            </div>
+            <div class="input-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="Enter Location" required>
+            </div>
+            <div class="input-group">
+                <label for="car-name">Car Name</label>
+                <input type="text" id="car-name" name="car-name" placeholder="Car Name" required>
+            </div>
+            <div class="input-group">
+                <label for="car-number">Car Number</label>
+                <input type="text" id="car-number" name="car-number" placeholder="Car Number" required>
+            </div>
+            <div class="input-group">
+                <label for="seat-availability">Seat Availability</label>
+                <input type="text" id="seat-availability" name="seat-availability" placeholder="No of seat" required>
+            </div>
+            <div class="input-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="input-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="input-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <button class="btn-signin" type="submit">Post Detail</button>
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+    <style>
+        select {
+  width: 100%; /* make the select element full width */
+  padding: 10px; /* add some padding to make it visible */
+  border: 1px solid #ccc; /* add a border to make it visible */
+}
+.login-container1 {
+  max-width: 500px; /* set a max width for the container */
+  margin: 10px auto; /* center the container horizontally */
+   /* center the text horizontally */
+  background-color: black; /* set the background color of the container */
+  padding: 20px; /* add some padding to the container */
+  
+}
+.input-group {
+  margin-bottom: 20px; /* add some margin between input groups */
+}
+#gender{
+    background-color: black;
+    color: white;
+}
+.h22{
+    text-align: center;
+    margin-top: 15px;
+}
+    </style>
+</body>
+</html>

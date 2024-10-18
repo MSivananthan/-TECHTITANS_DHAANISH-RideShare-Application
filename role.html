@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Easy</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container10">
+        <h1>Choose your role?</h1>
+        <div class="button-container">
+            <button onclick="redirectTo('driver')">Driver</button>
+            <button onclick="redirectTo('rider')">Rider</button>
+        </div>
+    </div>
+
+
+    <style>
+ .container10 {
+    text-align: center;
+    color: white;
+    background-color: black; /* Added a background color */
+    padding: 50px; /* Added padding */
+    border-radius: 10px; /* Added border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added box shadow */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 36px; /* Increased font size */
+    font-weight: bold; /* Added font weight */
+    text-align: center;
+}
+
+.button-container {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+button {
+    margin-top: 3%;
+    padding: 20px 20px;
+    font-size: 18px;
+    background-color: #ff007a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    width: 200px; /* Added width */
+}
+
+button:hover {
+    background-color: white;
+    color: #000;
+}
+
+
+
+</style>
+<script>
+        function redirectTo(role) {
+    if (role === 'driver') {
+        window.location.href = 'driver1.html';
+    } else if (role === 'rider') {
+        window.location.href = 'request.html';
+    }
+}
+
+</script>
+</body>
+</html>

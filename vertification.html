@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Easy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container1">
+        <div class="verification-box">
+            <h1 class="logo"><span class="r">R</span>ide<span><span class="e">E</span>asy</span></h1>
+            <p class="instruction">Enter Corporate credentials</p>
+            <form id="verification-form">
+                <div class="input-container">
+                    <input type="text" maxlength="1" id="code1">
+                    <input type="text" maxlength="1" id="code2">
+                    <input type="text" maxlength="1" id="code3">
+                    <input type="text" maxlength="1" id="code4">
+                </div>
+                <button class="verify-btn" type="submit">Verify Now</button>
+            </form>
+            <p class="resend-text">Are you Hexaware Employee? <a href="#">Verify It</a></p>
+        </div>
+    </div>
+    <script>
+        const form = document.getElementById('verification-form');
+        const codeInputs = document.querySelectorAll('input[type="text"][maxlength="1"]');
+
+        codeInputs.forEach((input, index) => {
+          input.addEventListener('input', (e) => {
+            if (input.value.length === 1) {
+              const nextInput = codeInputs[index + 1];
+              if (nextInput) {
+                nextInput.focus();
+              }
+            }
+          });
+        });
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const code1 = document.getElementById('code1').value;
+            const code2 = document.getElementById('code2').value;
+            const code3 = document.getElementById('code3').value;
+            const code4 = document.getElementById('code4').value;
+
+            if (code1 && code2 && code3 && code4) { // check if all fields are filled
+                window.location.href = 'role.html';
+            } else {
+                alert('Please enter the verification code');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Easy</title>
+    <link rel="stylesheet" href="styles.css">
+
+    
+</head>
+<body>
+    <div class="container4">
+        <h1>Available Matching Ride</h1>
+        <div id="car-list">
+            <!-- JavaScript will populate this section -->
+        </div>
+    </div>
+
+<style>
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100px; /* adjust the height to your liking */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px; /* add some space between image and car name */
+}
+
+.image-container h2 {
+    text-align: center;
+    margin: 0; /* remove default margin */
+    flex: 1; /* make the car name container flexible */
+}
+
+    </style>
+<script>
+    const cars = [
+    { name: "Maruti Suzuki Swift", image: "https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-black-super-car-png-image_11921537.png", seats: 3 },
+    { name: "Hyundai i20", image: "https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-black-super-car-png-image_11921537.png", seats: 3 },
+    { name: "Honda City", image: "https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-black-super-car-png-image_11921537.png", seats: 4 },
+    { name: "Tata Nexon", image: "https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-black-super-car-png-image_11921537.png", seats: 1},
+    { name: "Mahindra Scorpio", image: "https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-black-super-car-png-image_11921537.png", seats: 2},
+    { name: "Toyota Fortuner", image: "https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-black-super-car-png-image_11921537.png", seats: 5 }
+];
+
+// Function to get random car details
+function getRandomCar() {
+    return cars[Math.floor(Math.random() * cars.length)];
+}
+
+// Function to get random driver name
+function getRandomDriverName() {
+    const driverNames = ["John Doe", "Jane Smith", "Bob Johnson", "Alice Brown", "Mike Davis"];
+    return driverNames[Math.floor(Math.random() * driverNames.length)];
+}
+
+// Function to get random contact number
+function getRandomContactNumber() {
+    const randomNum = Math.floor(1000000000 + Math.random() * 9000000000);
+    return randomNum.toString();
+}
+
+// Function to get random driver gender
+function getRandomGender() {
+    const genders = ["Male", "Female"];
+    return genders[Math.floor(Math.random() * genders.length)];
+}
+function getRandomCarNumber() {
+    const randomNum = Math.floor(1000 + Math.random() * 9000);
+    const randomState = ["TN", "TN", "TN", "TN", "TN"];
+    const randomStateCode = randomState[Math.floor(Math.random() * randomState.length)];
+    return `${randomStateCode} ${randomNum}`;
+}
+
+// Generate car list
+const carListDiv = document.getElementById('car-list');
+for (let i = 0; i < 3; i++) {
+    const car = getRandomCar();
+    const driverName = getRandomDriverName();
+    const contactNumber = getRandomContactNumber();
+    const gender = getRandomGender();
+    const Number= getRandomCarNumber() ;
+    
+
+    const carCard = document.createElement('div');
+    carCard.classList.add('car-card');
+
+    carCard.innerHTML = `
+        <div class="image-container">
+            <img src="${car.image}" alt="${car.name}">
+            <h2>${car.name}</h2> <!-- Car name under the image -->
+        </div>
+        <div class="details">
+            <p class="driver">Driver: ${driverName} (${gender})</p>
+            <p class="contact">Contact: ${contactNumber}</p>
+            <p class="contact">Car Number: ${Number}</p>
+            <p class="seats">Seats Available: ${car.seats}</p>
+            <button class="confirm-ride">Request Ride</button>
+        </div>
+    `;
+
+    // Add event listener to confirm ride button
+    const confirmRideButton = carCard.querySelector('.confirm-ride');
+    confirmRideButton.addEventListener('click', () => {
+        window.location.href = 'Ddetail.html'; // Redirect to profile.html
+    });
+
+    carListDiv.appendChild(carCard);
+}
+
+</script>
+</body>
+</html>
