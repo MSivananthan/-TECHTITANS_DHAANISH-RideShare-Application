@@ -100,55 +100,55 @@ Now, you can access the application locally at `http://localhost:3000`.
 ### 1. **User Authentication**
 Users must log in with their corporate credentials to access the RideShare platform.
 
-![Login Page]<img src="1.png"> <img src="2.png"> 
+<img src="1.png"> <img src="2.png"> 
 *Login page where users enter their credentials.*
 
 ### 2. **Home Page**
 Once logged in, users are directed to the home page, where they can either search for available rides or post a ride.
 
-![Home Page]<img src="3.png"> <img src="4.png">
+<img src="3.png"> <img src="4.png">
 *Home page showing options to search or post rides.*
 
 ### 3. **Searching for Rides**
 Riders enter their destination, date, and time to find available carpool options.
 
-![Search Ride Page]<img src="5.png"> <img src="6.png">
+<img src="5.png"> <img src="6.png">
 *Search for available rides by entering travel details.*
 
 ### 4. **Ride Results**
 The AI-powered ride-matching algorithm suggests the best matches based on routes and schedules.
 
-![Ride Results Page]<img src="7.png">  <img src="8.png">
+<img src="7.png">  <img src="8.png">
 *List of matched rides with details like driver name, vehicle, and estimated time.*
 
 ### 5. **Requesting a Ride**
 Users can send a ride request to the driver after reviewing the available options.
 
-![Request Ride Page]<img src="9.png"> <img src="10.png">
+<img src="9.png"> <img src="10.png">
 *Detailed view of the selected ride with an option to request a ride.*
 
 ### 6. **Posting a Ride (For Drivers)**
 Drivers can post their rides by entering details such as destination, date, time, and available seats.
 
-![Post Ride Page]<img src="11.png"> <img src="12.png"> 
+<img src="11.png"> <img src="12.png"> 
 *Page for drivers to post new rides.*
 
 ### 7. **Real-Time Ride Tracking**
 Once a ride is confirmed, users can track the real-time status of the ride, including pickup points and estimated arrival times.
 
-![Trip Details Page]<img src="13.png"> <img src="14.png">  
+<img src="13.png"> <img src="14.png">  
 *Live tracking and status updates during the ride.*
 
 ### 8. **Cashless Payments**
 After the ride is completed, payments are automatically calculated and split among riders.
 
-![Payment Summary Page]<img src="15.png"> <img src="16.png"> 
+<img src="15.png"> <img src="16.png"> 
 *Fare breakdown and payment confirmation page.*
 
 ### 9. **Providing Feedback**
 Users can rate their ride and leave feedback to ensure quality service and improve future ride experiences.
 
-![Feedback Page]<img src="17.png"> 
+<img src="17.png"> 
 *Feedback system with ratings and comments.*
 
 ---
@@ -158,4 +158,3 @@ The RideShare application provides a seamless, user-friendly experience for both
 
 ---
 
-Let me know if you'd like more adjustments or to integrate specific screenshots from your project!
