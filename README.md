@@ -47,10 +47,6 @@ The RideShare application is an AI-powered platform developed to enhance commuti
    ```bash
    Go Live
    ```
-4. Start the application:
-  
-   ```
 
----
 
 Let me know if you'd like any changes!
